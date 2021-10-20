@@ -25,9 +25,9 @@ const App2 = (props) => {
 
       const [array, setArray] = useState(characters)
 
-      const removeCharacter = index => {
+      const removeCharacter = i => {
           console.log('hello')
-          let deleteOneItem = array.filter((item,i) => i !== index);
+          let deleteOneItem = array.filter((element,index) => index !== i);
           setArray(deleteOneItem);
             };
     

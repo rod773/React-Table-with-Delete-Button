@@ -6,13 +6,12 @@ const TableHeader = () => {
         <tr>
           <th>Name</th>
           <th>Job</th>
-          <th>Remove</th>
+          <th>Remove !</th>
         </tr>
       </thead>
     )
   }
   const TableBody = (props) => {
-    // const deleteRow = () => { props.removeCharacter(props.id) }
 
     const rows = props.characterData.map((row, index) => {
         return (
